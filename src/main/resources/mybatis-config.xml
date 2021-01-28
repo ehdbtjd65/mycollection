@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<properties>
+		<!-- user information -->
+		<property name="user_information" value="user_information" />
+		<property name="col_user_name" value="user_name" />
+		<property name="col_user_id" value="user_id" />
+		<property name="col_user_password" value="user_password" />
+		<property name="col_user_email" value="user_email" />
+		<property name="col_user_phone" value="user_phone" />
+		<property name="col_user_birthday" value="user_birthday" />
+		<property name="col_user_sex" value="user_sex" />
+
+
+		<!-- company_Information -->
+		<property name="company_information"
+			value="company_information" />
+		<property name="col_company_name" value="company_name" />
+		<property name="col_company_id" value="company_id" />
+		<property name="col_company_pw" value="company_pw" />
+		<property name="col_company_email" value="company_email" />
+		<property name="col_company_phone" value="company_phone" />
+
+		<!-- user_mypage -->
+		<property name="user_mypage" value="user_mypage" />
+		<property name="col_profile_url" value="profile_url" />
+		<property name="col_email_private" value="email_private" />
+		<property name="col_phone_private" value="phone_private" />
+		<property name="col_sns_instargram" value="sns_instargram" />
+		<property name="col_sns_facebook" value="sns_facebook" />
+
+
+		<!-- Job_Board -->
+		<property name="job_board" value="job_board" />
+		<property name="col_job_bno" value="job_bno" />
+		<property name="col_job_email" value="job_email" />
+		<property name="col_job_title" value="job_title" />
+		<property name="col_job_content" value="job_content" />
+		<property name="col_job_company_name"
+			value="job_company_name" />
+		<property name="col_job_date" value="job_date" />
+		<property name="col_job_end_date" value="job_end_date" />
+		<property name="col_job_photo_url" value="job_photo_url" />
+		<property name="col_job_map" value="job_map" />
+		<property name="col_job_company_url" value="company_url" />
+
+		<!-- portfolio_board -->
+		<property name="portfolio_board" value="portfolio_board" />
+		<property name="col_portfolio_bno" value="portfolio_bno" />
+		<property name="col_portfolio_url" value="portfolio_url" />
+		<property name="col_portfolio_file_url"
+			value="portfolio_file_url" />
+		<property name="col_portfolio_date" value="portfolio_date" />
+		<property name="col_portfolio_like" value="portfolio_like" />
+
+
+		<!-- Gallery Board -->
+		<property name="gallery_board" value="gallery_board" />
+		<property name="col_gallery_bno" value="gallery_bno" />
+		<property name="col_gallery_title" value="user_gallery_title" />
+		<property name="col_gallery_photo_url"
+			value="gallery_photo_url" />
+		<property name="col_gallery_date" value="gallery_date" />
+		<property name="col_gallery_like" value="gallery_like" />
+
+		<!-- Gallery Reply -->
+		<property name="gallery_reply" value="gallery_reply" />
+		<property name="col_gallery_rno" value="gallery_rno" />
+		<property name="col_gallery_r_content"
+			value="gallery_r_content" />
+
+
+
+
+	</properties>
+
+
+
+
+	<typeAliases>
+		<package name="com.spring.mycollection.domain" />
+	</typeAliases>
+
+
+
+
+
+</configuration>

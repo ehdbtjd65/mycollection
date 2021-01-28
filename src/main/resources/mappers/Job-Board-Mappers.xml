@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 프로필 설정  sns 이메일,전화번호 공개 설정  -->
+<mapper namespace="com.spring.mycollection.JobBoardMapper">
+<!-- insert  -->
+
+
+
+<!-- update  -->
+
+
+
+<!--  delete -->
+
+</mapper>
