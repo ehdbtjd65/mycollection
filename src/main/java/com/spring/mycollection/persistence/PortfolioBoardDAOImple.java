@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import com.spring.mycollection.domain.PortfolioBoardVO;
 
+
 @Repository
 public class PortfolioBoardDAOImple implements PortfolioBoardDAO {
 	private static final String NAMESPACE = "com.spring.mycollection.PortfolioBoardMapper";
@@ -23,4 +24,5 @@ public class PortfolioBoardDAOImple implements PortfolioBoardDAO {
 		// TODO Auto-generated method stub
 		return null; //sqlSession.selectList(NAMESPACE+".select_all" , homeId);
 	}
-}
+} // end PortfolioBoardDAOImple {}
+

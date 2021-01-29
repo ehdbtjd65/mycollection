@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 public class GalleryBoardDAOImple  implements GalleryBoardDAO{
 
-}
+	
+	
+	
+} // end GalleryBoardDAOImple

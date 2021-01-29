@@ -11,6 +11,7 @@
 	http://www.springframework.org/schema/context/spring-context.xsd
 	http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 	<!-- Root Context: defines shared resources visible to all other web components -->
+<<<<<<< HEAD
 	<!-- DataSource Bean -->
 	<bean id="ds" class="oracle.jdbc.pool.OracleDataSource"
 		destroy-method="close">
@@ -46,4 +47,9 @@
 
 
 
+=======
+		
+		
+		
+>>>>>>> refs/remotes/Mycollectiom-github/master
 </beans>
