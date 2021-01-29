@@ -13,7 +13,7 @@ public class JobBoardDAOImple implements JobBoardDAO{
 	private static final String NAMESPACE = "com.spring.mycollection.JobBoardMapper";
 	private static final Logger logger = LoggerFactory.getLogger(JobBoardDAOImple.class);
 	
-	@Autowired
+	//@Autowired
 	//private SqlSession sqlSession;
 	
 	

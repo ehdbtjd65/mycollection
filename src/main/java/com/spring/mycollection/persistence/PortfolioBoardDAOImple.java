@@ -15,8 +15,7 @@ import com.spring.mycollection.domain.PortfolioBoardVO;
 public class PortfolioBoardDAOImple implements PortfolioBoardDAO {
 	private static final String NAMESPACE = "com.spring.mycollection.PortfolioBoardMapper";
 	private static final Logger logger = LoggerFactory.getLogger(PortfolioBoardDAOImple.class);
-
-	@Autowired
+//@Autowired
 //	private SqlSession sqlSession;
 
 	@Override
