@@ -13,4 +13,4 @@ public interface PortfolioBoardDAO {
 	public abstract int delete(int protfolio_bno);
 	
 	
-}
+} // end PortfolioBoardDAO
