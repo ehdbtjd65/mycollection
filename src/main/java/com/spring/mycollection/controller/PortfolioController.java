@@ -33,7 +33,7 @@ public class PortfolioController {
 		
 
 		
-		model.addAttribute("portfoliolist", list);
+		model.addAttribute("portfoliolist", list);//주석 추가 
 	}
 	
 	
