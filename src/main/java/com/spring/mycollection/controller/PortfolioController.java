@@ -30,10 +30,17 @@ public class PortfolioController {
 	
 		String sessionHomeId ="do0610";
 		List<PortfolioBoardVO> list= portfolioBoardService.read(sessionHomeId);
-		; 
+		
 
 		
 		model.addAttribute("portfoliolist", list);
 	}
+	
+	
+	
+	
+	
+	
+	
 
 }
