@@ -35,11 +35,13 @@ public class PortfolioController {
 		//model.addAttribute("portfoliolist", list);// 주석 추가
 		model.addAttribute("portfoliolist", sessionHomeId);
 		
+		
 	}
 
 	@RequestMapping(value = "/portfolio-register", method = RequestMethod.GET)
 	public void portfolioinsert(Model model) {
 		logger.info("register1");
+		
 
 	}
 
