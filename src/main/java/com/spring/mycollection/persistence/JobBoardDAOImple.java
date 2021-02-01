@@ -1,5 +1,8 @@
 package com.spring.mycollection.persistence;
 
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,13 +16,13 @@ public class JobBoardDAOImple implements JobBoardDAO{
 	private static final String NAMESPACE = "com.spring.mycollection.JobBoardMapper";
 	private static final Logger logger = LoggerFactory.getLogger(JobBoardDAOImple.class);
 	
-	//@Autowired
-	//private SqlSession sqlSession;
+	@Autowired
+	private SqlSession sqlSession;
 	
 	
 	@Override
-	public JobBoardVO select(int job_bno) {
-		
+	public List<JobBoardVO> select(String homeId) {
+		logger.info("select() »£√‚ : job_bno");
 		return null;
 	}
 
@@ -40,5 +43,6 @@ public class JobBoardDAOImple implements JobBoardDAO{
 		
 		return 0;
 	}
+
 
 }

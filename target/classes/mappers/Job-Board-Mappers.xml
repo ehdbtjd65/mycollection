@@ -6,13 +6,36 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- 프로필 설정  sns 이메일,전화번호 공개 설정  -->
 <mapper namespace="com.spring.mycollection.JobBoardMapper">
 <!-- insert  -->
-
+	<insert id="insert">
+		insert into 
+		${job_board}(${col_job_email}, ${col_job_title}, ${col_job_content}, ${col_job_company_name}, 
+		${col_job_company_url}, ${col_job_photo_url}, ${col_job_map}) 
+		values (#{job_email}, #{job_title}, #{job_contet}, #{job_company_name}, #{job_company_url}, 
+		#{job_photo_url}, #{job_map})
+	</insert>
 
 
 <!-- update  -->
-
+	<update id="update">
+		update ${job_board}
+		set ${col_job_email} = #{job_email}, ${col_job_title} = #{job_title}, 
+		${col_job_company_name} = #{job_company_name}, ${col_job_company_url} = #{job_company_url}
+		${col_job_photo_url} = #{job_photo_url}, ${col_job_map} = #{job_map}
+		where ${col_job_bno} = #{job_bno}
+	</update>
 
 
 <!--  delete -->
+	<delete id="delete">
+		delete from ${job_board}
+		where ${col_job_bno} = #{job_bno}
+	</delete>
+
+	<select id="select_by_bno" resultType="JobBoardVO">
+		select * from ${job_board}
+		where ${col_job_bno} = #{job_bno} 
+	</select>
+
+
 
 </mapper>
