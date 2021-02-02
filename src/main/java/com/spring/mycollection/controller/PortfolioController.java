@@ -13,15 +13,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.spring.mycollection.domain.PortfolioBoardVO;
 import com.spring.mycollection.service.PortfolioBoardService;
-import com.spring.mycollection.util.PdfToimges;
+import com.spring.mycollection.util.PDFutil;
 
 @Controller
 @RequestMapping(value = "/portfolio")
 public class PortfolioController {
 	private static final Logger logger = LoggerFactory.getLogger(PortfolioController.class);
 
-	
-		
 	@Autowired
 	private PortfolioBoardService portfolioBoardService;
 
@@ -30,23 +28,19 @@ public class PortfolioController {
 		// String sessionHomeId = (String) session.getAttribute("homeId");
 
 		String sessionHomeId = "do0610";
-		//List<PortfolioBoardVO> list = portfolioBoardService.read(sessionHomeId);
+		// List<PortfolioBoardVO> list = portfolioBoardService.read(sessionHomeId);
 
-		//model.addAttribute("portfoliolist", list);// 주석 추가
+//		model.addAttribute("portfoliolist", list);// 주석 추가
 		model.addAttribute("portfoliolist", sessionHomeId);
-		
-		
+
 	}
 
 	@RequestMapping(value = "/portfolio-register", method = RequestMethod.GET)
 	public void portfolioinsert(Model model) {
 		logger.info("register1");
-		
-		PdfToimges pdf = new PdfToimges();
-  //pdf.saveUploadedFile("C:/mycollection/mycollection/pdftest/test.pdf");
 
-	
-		
+		PDFutil pdf = new PDFutil();
+		pdf.saveUploadedFile("C:/mycollection/mycollection/pdftest/test.pdf");
 
 	}
 
