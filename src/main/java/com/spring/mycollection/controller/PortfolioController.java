@@ -43,7 +43,7 @@ public class PortfolioController {
 		logger.info("register1");
 		
 		PdfToimges pdf = new PdfToimges();
-  pdf.saveUploadedFile("C:/mycollection/mycollection/pdftest/test.pdf");
+  //pdf.saveUploadedFile("C:/mycollection/mycollection/pdftest/test.pdf");
 
 	
 		

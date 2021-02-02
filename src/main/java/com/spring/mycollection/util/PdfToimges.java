@@ -1,14 +1,5 @@
 package com.spring.mycollection.util;
 
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.rendering.ImageType;
-import org.apache.pdfbox.rendering.PDFRenderer;
-import org.apache.pdfbox.tools.imageio.ImageIOUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,7 +10,7 @@ public class PdfToimges {
 
 
 
-
+/*
 
 	public void saveUploadedFile(String pdfFilename) {
 
@@ -49,4 +40,5 @@ public class PdfToimges {
 
 	
 	}
+	*/
 }

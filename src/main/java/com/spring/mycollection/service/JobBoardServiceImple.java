@@ -21,7 +21,7 @@ public class JobBoardServiceImple implements JobBoardService {
 	@Override
 	public List<JobBoardVO> read(String homeId) {
 		logger.info("JobBoardDAO read() »£√‚");
-		return jobBoardDAO.select(homeId);
+		return null;//jobBoardDAO.select(homeId);
 	}
 
 
