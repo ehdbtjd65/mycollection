@@ -19,29 +19,30 @@ if 포트폴리오 존재시 새로 만들기 버튼 숨기기
 
 
  -->
+ <img src="/1.png" />
+ <img src='../../../../file/PdfRoute/2.jpg' />
+  156789<br>
+  <img src="../../../../file/PdfRoute/1.png" />
+  <img src="../pdftest/main/file/PdfRoute/1.png" />
+  
  ${vo.user_id }
  ${vo.portfolio_url }
  ${vo.portfolio_page_count }
- 11
+ 11111111111111111111111111
  ${vo.portfolio_url }-1.png
  
  <br>
- 99999999101
+
  <br>
- <img src="../../../../../../pdftest/main/file/PdfRoute/1.png" />
-  156<br>
-  <img src="../../../pdftest/main/file/PdfRoute/1.png" />
-  <img src="../pdftest/main/file/PdfRoute/1.png" />
   
-  
-  
+  <%-- 
    <img src="./mycollection/src/main/file/PdfRoute/6abd4964-660f-4543-a84d-48931606fe1e_test.pdf-0.png" /> <br> 
 
-    <img src="/mycollection/mycollection/src/main/file/PdfRoute/6abd4964-660f-4543-a84d-48931606fe1e_test.pdf-0.png" /> 
+    <img src="/mycollection/mycollection/src/main/file/PdfRoute/6abd4964-660f-4543-a84d-48931606fe1e_test.pdf-0.PNG" /> 
    <br> <br> <br> <br>
 <% for (int i=0; i< 20 ; i++) { %>
 <img src='${vo.portfolio_url }-<%=i%>.PNG' />
-<% } %>
+<% } %> --%>
 
 	포토폴리오 리스트
 
