@@ -21,28 +21,18 @@ public class JobBoardDAOImple implements JobBoardDAO{
 	
 	
 	@Override
-	public List<JobBoardVO> select(String homeId) {
-		logger.info("select() 호출 : job_bno");
-		return null;
+	public List<JobBoardVO> list(JobBoardVO vo) {
+		logger.info("list() 호출 : vo " + vo);
+		return sqlSession.selectList(NAMESPACE + ".list", vo);
 	}
 
 	@Override
 	public int insert(JobBoardVO vo) {
-		
-		return 0;
+		logger.info("insert() 호출");
+		return sqlSession.insert(NAMESPACE + ".insert", vo);
 	}
 
-	@Override
-	public int update(JobBoardVO vo) {
-		
-		return 0;
-	}
-
-	@Override
-	public int delete(int job_bno) {
-		
-		return 0;
-	}
+	
 
 
 }

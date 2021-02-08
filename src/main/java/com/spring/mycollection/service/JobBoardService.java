@@ -8,9 +8,9 @@ import com.spring.mycollection.domain.JobBoardVO;
 
 public interface JobBoardService {
 
-	 public abstract List<JobBoardVO> read(String homeId);
+	 public abstract List<JobBoardVO> list(JobBoardVO vo);
 	
-	//public abstract JobBoardVO read(int job_bno);
+	public abstract int insert(JobBoardVO vo);
 	
 	
 	

@@ -31,9 +31,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		where ${col_job_bno} = #{job_bno}
 	</delete>
 
-	<select id="select_by_bno" resultType="JobBoardVO">
+	<select id="select" resultType="JobBoardVO">
 		select * from ${job_board}
 		where ${col_job_bno} = #{job_bno} 
+	</select>
+
+	<select id="list" resultMap="JobBoardVO">
+		select * from ${job_board}
+		order by job_bno desc
 	</select>
 
 

@@ -18,11 +18,24 @@ public class JobBoardServiceImple implements JobBoardService {
 	private JobBoardDAO dao;
 
 	//전체보기
+//	@Override
+//	public List<JobBoardVO> read(String homeId) {
+//		logger.info("JobBoard_Service read() 호출");
+//		return null;//jobBoardDAO.select(homeId);
+//	}
+
 	@Override
-	public List<JobBoardVO> read(String homeId) {
-		logger.info("JobBoardDAO read() 호출");
-		return null;//jobBoardDAO.select(homeId);
+	public int insert(JobBoardVO vo) {
+		logger.info("JobBoard_Service insert() 호출");
+		return dao.insert(vo);
 	}
+
+	@Override
+	public List<JobBoardVO> list(JobBoardVO vo) {
+		logger.info("JobBoard_Service list() 호출");
+		return dao.list(vo);
+	}
+
 
 
 
