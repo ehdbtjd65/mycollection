@@ -1,7 +1,5 @@
 package com.spring.mycollection.service;
 
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +15,20 @@ public class PortfolioBoardServiceImple implements PortfolioBoardService {
 		   
 	
 	@Autowired
-	private PortfolioBoardDAO portfolioBoardDAO;
+	private PortfolioBoardDAO dao;
 	
 	@Override
-	public List<PortfolioBoardVO> read(String homeId) {
+	public PortfolioBoardVO read(String homeId) {
 		 logger.info("PortfolioBoardDAO read() »£√‚");
 		 
-		return portfolioBoardDAO.select(homeId);
+		return dao.select(homeId);
 	}
+	
+	@Override
+	public int create(PortfolioBoardVO vo) {
+		// TODO Auto-generated method stub
+		return dao.create(vo);
+	}
+	
+	
 }

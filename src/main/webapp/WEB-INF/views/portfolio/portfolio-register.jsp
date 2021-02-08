@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,23 +10,29 @@
 </head>
 <body>
 
-포트 폴리오 올리기 
+	포트 폴리오 올리기1
+	<form class = writeForm action="portfolio-register" method="post"
+		enctype="multipart/form-data">
+		<br> 파일 : <input
+			type="file" name="file"><br> 
+			<input type="submit" value="업로드">
+		<button id="cancel_btn" type="button">취소</button>
+	</form>
 
-<button id="insert_btn" type="button">작성</button>
 
 
-
-<script type="text/javascript">
+	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#insert_btn').click(function() {
-			
-				 location.href = "/mycollection/portfolio/myportfoliolist";
-			
-		
-				}
+			$('#cancel_btn').click(function() {
 
-			);
-		
+				location.href = "/mycollection/portfolio/myportfoliolist";
+
+			});
+			$('#submit_form').click(function(){
+				var frm = $('.writeForm');
+				frm.submit();
+			});
+					
 		});
 	</script>
 

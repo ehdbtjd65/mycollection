@@ -53,8 +53,8 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		<property name="portfolio_board" value="portfolio_board" />
 		<property name="col_portfolio_bno" value="portfolio_bno" />
 		<property name="col_portfolio_url" value="portfolio_url" />
-		<property name="col_portfolio_file_url"
-			value="portfolio_file_url" />
+		<property name="col_portfolio_page_count"
+			value="portfolio_page_count" />
 		<property name="col_portfolio_date" value="portfolio_date" />
 		<property name="col_portfolio_like" value="portfolio_like" />
 

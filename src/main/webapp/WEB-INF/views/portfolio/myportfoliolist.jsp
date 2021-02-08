@@ -1,25 +1,53 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"  %> 
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>   
+	
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 <!-- 
-if Æ÷Æ®Æú¸®¿À Á¸Àç½Ã »õ·Î ¸¸µé±â ¹öÆ° ¼û±â±â 
-      ¤¤ ³ªÁß¿¡ ¾ÆÀÌÇÁ·¹ÀÓÀ¸·Î ¾µ¿¹Á¤ 
-      ¤¤
+if í¬íŠ¸í´ë¦¬ì˜¤ ì¡´ì¬ì‹œ ìƒˆë¡œ ë§Œë“¤ê¸° ë²„íŠ¼ ìˆ¨ê¸°ê¸° 
+      ã„´ ë‚˜ì¤‘ì— ì•„ì´í”„ë ˆì„ìœ¼ë¡œ ì“¸ì˜ˆì • 
+      ã„´
 
 
  -->
+ ${vo.user_id }
+ ${vo.portfolio_url }
+ ${vo.portfolio_page_count }
+ 11
+ ${vo.portfolio_url }-1.png
+ 
+ <br>
+ 99999999101
+ <br>
+ <img src="../../../../../../pdftest/main/file/PdfRoute/1.png" />
+  156<br>
+  <img src="../../../pdftest/main/file/PdfRoute/1.png" />
+  <img src="../pdftest/main/file/PdfRoute/1.png" />
+  
+  
+  
+   <img src="./mycollection/src/main/file/PdfRoute/6abd4964-660f-4543-a84d-48931606fe1e_test.pdf-0.png" /> <br> 
 
-	Æ÷ÅäÆú¸®¿À ¸®½ºÆ®
+    <img src="/mycollection/mycollection/src/main/file/PdfRoute/6abd4964-660f-4543-a84d-48931606fe1e_test.pdf-0.png" /> 
+   <br> <br> <br> <br>
+<% for (int i=0; i< 20 ; i++) { %>
+<img src='${vo.portfolio_url }-<%=i%>.PNG' />
+<% } %>
+
+	í¬í† í´ë¦¬ì˜¤ ë¦¬ìŠ¤íŠ¸
 
 	<button
 		onclick="location = '/mycollection/portfolio/portfolio-register'"
-		type="button">»õ·Î¸¸µé±â</button>
+		type="button">ìƒˆë¡œë§Œë“¤ê¸°</button>
 
 </body>
 </html>

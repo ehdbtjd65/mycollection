@@ -3,26 +3,33 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- 프로필 설정  sns 이메일,전화번호 공개 설정  -->
+<!-- 프로필 설정 sns 이메일,전화번호 공개 설정 -->
 <mapper namespace="com.spring.mycollection.PortfolioBoardMapper">
 
+	<!--create -->
 
-<!--  select -->
-
-
-<!-- insert  -->
-
- <insert id="insert" >
-    insert into ${portfolio_board}(${col_portfolio_bno}, ${col_user_id}, ${col_portfolio_url}, 
-    ${col_portfolio_file_url}, ${col_portfolio_date}, ${col_portfolio_like})
-    values(#{portfolio_bno}, #{user_id}, #{portfolio_url}, #{portfolio_file_url}, #{portfolio_date},
-     ${portfolio_like})
-  </insert>
-
-<!-- update  -->
+	<insert id="create">
+		insert into ${portfolio_board}( ${col_user_id}, ${col_portfolio_url}
+		,${col_portfolio_page_count})
+		values(#{user_id}, #{portfolio_url},#{portfolio_page_count} );
+	</insert>
 
 
 
-<!--  delete -->
+	<!-- insert -->
+
+	<!-- select -->
+	
+	<!-- 홈아이디로 myportfolio 로드  -->
+	<select id="select_fortfolio_homeid" resultType="PortfolioBoardVO">
+		select * from ${portfolio_board}
+		where ${col_user_id} = #{user_id};
+	</select>
+
+	<!-- update -->
+
+
+
+	<!-- delete -->
 
 </mapper>
