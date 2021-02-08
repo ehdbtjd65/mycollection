@@ -16,16 +16,11 @@ public class PDFutil {
 
 	private static final Logger logger = LoggerFactory.getLogger(PDFutil.class);
 
-
-
-
-
-
-	public void saveUploadedFile(String pdfFilename) {
+	public int saveUploadedFile(String pdfFilename) {
 
 		int pageCounter = 0;
 		logger.info("PdfToimges 클래스에 들어왔다");
-		
+		logger.info("pdfFilename  ::  " + pdfFilename);
 		PDDocument document;
 		try {
 			document = PDDocument.load(new File(pdfFilename));
@@ -42,12 +37,13 @@ public class PDFutil {
 			}
 			logger.info("총 이미지수" + pageCounter);
 			document.close();
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
-	
+		return pageCounter;
 	}
 
 }
